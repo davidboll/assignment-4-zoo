@@ -1,0 +1,25 @@
+.summary {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.summary img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .summary {
+    height: 100%;
+  }
+
+  .summary img {
+    width: 300px;
+    height: 300px;
+  }
+}

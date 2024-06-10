@@ -1,0 +1,112 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 2rem;
+  color: #333;
+  padding: 10px;
+}
+
+.mainContent {
+  padding: 15px;
+}
+
+.animalsWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.animalsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.animalContainer {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  flex: 1 1 100%;
+}
+
+.animalName {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.animalImage {
+  width: 100%;
+  height: 200px;
+  margin-right: 0;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.sidebar {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 15px;
+  overflow: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+  .pageContainer {
+    flex-direction: row;
+  }
+
+  .header {
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .mainContent,
+  .animalsWrapper {
+    padding: 20px;
+  }
+
+  .animalsGrid {
+    gap: 20px;
+  }
+
+  .animalContainer {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+
+  .animalName {
+    font-size: 20px;
+  }
+
+  .animalImage {
+    height: 300px;
+    margin-right: 15px;
+  }
+
+  .sidebar {
+    width: 200px;
+    min-width: 250px;
+  }
+}
